@@ -1,0 +1,37 @@
+{
+  "name": "gulp-laravel-validator",
+  "version": "0.0.0",
+  "description": "Generate PHP validations from short and concise descriptions of the input format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ernestoalejo/gulp-laravel-validator.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "laravel",
+    "validator"
+  ],
+  "author": "Ernesto Alejo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ernestoalejo/gulp-laravel-validator/issues"
+  },
+  "homepage": "https://github.com/ernestoalejo/gulp-laravel-validator",
+  "dependencies": {
+    "through2": "~0.4.1",
+    "gulp-util": "~2.2.14",
+    "laravel-validator": "~0.1.4"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-mocha": "~0.4.1",
+    "expect.js": "~0.3.1",
+    "vinyl": "~0.2.3",
+    "jshint-stylish": "~0.1.5",
+    "gulp-jshint": "~1.5.0"
+  }
+}
