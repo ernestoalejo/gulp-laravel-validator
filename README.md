@@ -6,6 +6,9 @@
 **NOTE:** This project is not related to the Laravel official Validator class. It's
 a stricter and statically generated alternative to it.
 
+To read more about the format of the validator files see the [laravel-validator](https://github.com/ernestoalejo/laravel-validator) project directly.
+
+
 ## Installation
 
 Install via [npm](https://npmjs.org/package/gulp-laravel-validator):
