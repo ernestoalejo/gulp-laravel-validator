@@ -19,7 +19,7 @@ npm install gulp-laravel-validator --save-dev
 
 ```js
 var gulp = require('gulp'),
-    laravelValidator = require('./index'),
+    laravelValidator = require('gulp-laravel-validator'),
     rename = require('gulp-rename');
 
 gulp.task('default', function() {
