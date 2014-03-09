@@ -22,8 +22,15 @@ function gulpLaravelValidator() {
 
     // For buffers read them and push the generated validators
     if (file.isBuffer()) {
-      var source = validator.parse(file.contents.toString());
-      var generated = validator.generate(file.relative, source);
+      var generated;
+      try {
+        var source = validator.parse(file.contents.toString());
+        generated = validator.generate(file.relative, source);
+      } catch (err) {
+        this.emit('error', err);
+        return callback();
+      }
+
       file.contents = new Buffer(generated);
       this.push(file);
       return callback();
