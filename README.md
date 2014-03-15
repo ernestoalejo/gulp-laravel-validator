@@ -26,7 +26,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
 gulp.task('default', function() {
-  return gulp.src('app/validators/**/*.val')
+  return gulp.src('app/validators/**/*.js')
     .pipe(laravelValidator())
     .pipe(rename({extname: '.php'}))
     .pipe(gulp.dest('app/lib/Validators'));

@@ -9,13 +9,13 @@ describe('gulp-laravel-validator', function() {
   it('should generate the min-example', function(done) {
     var stream = laravelValidator();
 
-    fs.readFile('test/fixtures/min-example.val', function(err, buffer) {
+    fs.readFile('test/fixtures/min-example.js', function(err, buffer) {
       if (err) {
         throw err;
       }
 
       var fakeFile = new File({
-        path: 'test/fixtures/min-example.val',
+        path: 'test/fixtures/min-example.js',
         base: 'test/fixtures',
         contents: buffer,
       });
@@ -33,13 +33,13 @@ describe('gulp-laravel-validator', function() {
   it('should generate the subfolder example', function(done) {
     var stream = laravelValidator();
 
-    fs.readFile('test/fixtures/subfolder/example.val', function(err, buffer) {
+    fs.readFile('test/fixtures/subfolder/example.js', function(err, buffer) {
       if (err) {
         throw err;
       }
 
       var fakeFile = new File({
-        path: 'test/fixtures/subfolder/example.val',
+        path: 'test/fixtures/subfolder/example.js',
         base: 'test/fixtures',
         contents: buffer,
       });

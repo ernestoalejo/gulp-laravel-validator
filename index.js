@@ -24,8 +24,7 @@ function gulpLaravelValidator() {
     if (file.isBuffer()) {
       var generated;
       try {
-        var source = validator.parse(file.contents.toString());
-        generated = validator.generate(file.relative, source);
+        generated = validator.generate(file.base, file.path);
       } catch (err) {
         this.emit('error', err);
         return callback();
