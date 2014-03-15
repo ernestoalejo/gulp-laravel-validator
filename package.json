@@ -1,6 +1,6 @@
 {
   "name": "gulp-laravel-validator",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Generate PHP validations from short and concise descriptions of the input format.",
   "main": "index.js",
   "scripts": {
